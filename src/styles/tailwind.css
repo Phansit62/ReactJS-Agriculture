@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Mitr', sans-serif;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .page-item {
+    margin: 0 5px;
+    list-style: none;
+  }
+  
+  .page-link {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .active .page-link {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .break {
+    margin: 0 5px;
+  }
+  
+  .break-link {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .disabled .page-link {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .input-class {
+    @apply border-black border-2 py-2 px-2 rounded-md opacity-60 w-full h-10;
+  }
+  .btn-search {
+    @apply px-4 py-2 bg-sky-500 text-white rounded-lg my-2;
+  }
+  .bth-reset {
+    @apply px-4 py-2 border-sky-500 border-2  text-sky-500 rounded-lg my-2;
+  }
+  .btn-save {
+    @apply text-white bg-blue-400 py-2 px-4 rounded-md;
+  }
+  .input-textarea {
+    @apply border-black border-2 py-2 px-2 rounded-md opacity-60 w-full;
+  }
